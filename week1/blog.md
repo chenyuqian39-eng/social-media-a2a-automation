@@ -37,6 +37,7 @@ MCP is used for agent-to-tool(LLM-to-system) communication.
 MCP focuses on vertical integration — enabling a single LLM or agent to connect with external tools, data sources, and services.
 Use A2A when: Multiple agents need to collaborate on task; Tasks require delegation and coordination; You want dynamic capability discovery
 between agents； You want dynamic capability discovery between agents; Workflows are distributed across specialized agents.
+MCP connects agents to tools and data. A2A connects agents to other agents.An agent may use MCP to access tools, while simultaneously using A2A to coordinate with other agents.Together, they enable modular, scalable, and interoperable AI architectures.
 
 
 
