@@ -38,7 +38,20 @@ MCP focuses on vertical integration — enabling a single LLM or agent to connec
 Use A2A when: Multiple agents need to collaborate on task; Tasks require delegation and coordination; You want dynamic capability discovery
 between agents； You want dynamic capability discovery between agents; Workflows are distributed across specialized agents.
 MCP connects agents to tools and data. A2A connects agents to other agents.An agent may use MCP to access tools, while simultaneously using A2A to coordinate with other agents.Together, they enable modular, scalable, and interoperable AI architectures.
-
++-----------------------------+
+|       Application Layer     |
+|  (User Request / Host)      |
++-----------------------------+
+|     Artifact Layer          |
++-----------------------------+
+| Task & Messaging Layer      |
++-----------------------------+
+| Capability Discovery Layer  |
++-----------------------------+
+| Identity / Agent Card Layer |
++-----------------------------+
+| Transport Layer (HTTP/JSON) |
++-----------------------------+
 
 
 
