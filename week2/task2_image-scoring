@@ -1,0 +1,51 @@
+#Week2
+---
+
+## Original Source
+
+This implementation is based on the public codelab repository:
+
+https://github.com/haren-bh/multiagenthandson
+
+The purpose of this task is to successfully configure and run the multi-agent pipeline end-to-end.
+
+---
+
+## Technologies Used
+
+- Python
+- Google ADK (Agent Development Kit)
+- Vertex AI
+- Gemini
+- Imagen
+- FastAPI
+
+---
+
+## Environment Setup
+
+### 1. Clone repository in Cloud Shell
+git clone https://github.com/haren-bh/multiagenthandson.git
+
+### 2. Create Python environment
+python3 -m venv .venv
+source .venv/bin/activate
+### 3. Install dependencies
+pip install -r requirements.txt
+
+### 4. Configure environment variables and Run the System
+adk web
+
+
+Pipline:
+User Prompt  
+↓  
+Prompt Agent  
+↓  
+Image Generation Agent  
+↓  
+Evaluation Agent  
+↓  
+Score Check  
+↓  
+Regenerate (if needed)
