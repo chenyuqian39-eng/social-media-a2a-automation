@@ -1,0 +1,26 @@
+{
+    "name": "content-generator-agent",
+    "description": "A standalone Python content generator agent that creates TikTok and Rednote short-form social media content on demand.",
+    "skills": [
+        {
+            "name": "generate_full_post",
+            "description": "Generate a complete social media post package including title, hook, caption, hashtags, scenes, image prompts, and video prompt."
+        },
+        {
+            "name": "create_viral_caption",
+            "description": "Generate a short viral caption for TikTok or Rednote content."
+        },
+        {
+            "name": "generate_trending_audio",
+            "description": "Recommend a trending audio style for a target platform."
+        },
+        {
+            "name": "generate_image_prompts",
+            "description": "Generate visual prompts for Imagen image generation."
+        },
+        {
+            "name": "generate_video_prompt",
+            "description": "Generate an 8-second vertical video prompt for Veo 3."
+        }
+    ]
+}
