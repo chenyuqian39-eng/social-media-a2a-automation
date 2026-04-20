@@ -113,3 +113,4 @@ Instead of calling different APIs, we can use a single /invoke endpoint to dynam
 
 
 - Images will be generated and saved locally in week3 folder.
+- Video will be downloaded to week3/outputs file
