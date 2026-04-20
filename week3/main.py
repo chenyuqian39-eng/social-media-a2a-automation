@@ -6,7 +6,7 @@ from ai_generator import generate_caption_with_gemini
 
 app = FastAPI(title="Content Generator Agent")
 
-# 读取 agent card
+
 with open("agent_card.json", "r", encoding="utf-8") as f:
     AGENT_CARD = json.load(f)
 
@@ -74,6 +74,8 @@ def get_video_prompt(topic: str, audience: str, tone: str, cta: str):
         f"and end with CTA: {cta}."
     )
     return {"video_prompt": prompt}
+
+
 @app.post("/invoke", response_model=InvokeResponse)
 def invoke_agent(request: InvokeRequest):
     skill_name = request.skill_name
@@ -153,4 +155,5 @@ def invoke_agent(request: InvokeRequest):
         )
 
     else:
-        raise HTTPException(status_code=400, detail=f"Unknown skill: {skill_name}")
+        raise HTTPException(
+            status_code=400, detail=f"Unknown skill: {skill_name}")

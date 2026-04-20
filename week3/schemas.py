@@ -31,6 +31,9 @@ class GeneratedPost(BaseModel):
     video_prompt: str
     generated_images: list[str] | None = None
     video_job: dict | None = None
+    video_status: str | None = None
+    video_uri: str | None = None
+    video_file: str | None = None
 
 
 class InvokeRequest(BaseModel):

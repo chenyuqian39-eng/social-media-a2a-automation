@@ -79,4 +79,37 @@ video_prompt
 generated_images
 video_job
 
+
+for POST /create_viral_caption input:
+{
+  "topic": "cat tips",
+  "audience": "students",
+  "cta": "Follow for more"
+}
+
+should return: 
+{
+  "caption": "..."
+}
+
+for /invoke input:
+{
+  "skill_name": "generate_full_post",
+  "input": {
+    "platform": "tiktok",
+    "topic": "cat allergy tips",
+    "audience": "young pet owners",
+    "tone": "friendly",
+    "duration_seconds": 8,
+    "cta": "Follow for more pet tips"
+  }
+}
+output should be:
+{
+  "skill_name": "generate_full_post",
+  "output": {...}
+}
+Instead of calling different APIs, we can use a single /invoke endpoint to dynamically execute different skills. This makes the system more suitable for multi-agent architectures.
+
+
 - Images will be generated and saved locally in week3 folder.

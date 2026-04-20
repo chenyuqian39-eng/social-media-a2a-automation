@@ -38,6 +38,7 @@ def generate_caption_with_gemini(brief: ContentBrief) -> str:
 
     raise Exception("Gemini failed after retries")
 
+#generate some basic words
 def generate_post_fields_with_gemini(brief: ContentBrief) -> dict:
     prompt = f"""
     Generate short-form social media content fields for this brief.
@@ -88,7 +89,7 @@ def generate_post_fields_with_gemini(brief: ContentBrief) -> dict:
 
     return {}
 
-
+# full output, structured and schema validation
 def generate_full_post_with_gemini(brief: ContentBrief) -> GeneratedPost:
     prompt = f"""
 You are a short-form social media content generator.
